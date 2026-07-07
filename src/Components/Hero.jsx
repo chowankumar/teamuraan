@@ -12,7 +12,7 @@ import Particles from 'react-tsparticles';
 const Hero = () => {
   const { scrollY } = useScroll();
 
-  // Your original parallax speeds
+   
   const yFast = useTransform(scrollY, [0, 500], [0, -150]);
   const yMid = useTransform(scrollY, [0, 500], [0, -80]);
 
@@ -23,7 +23,7 @@ const Hero = () => {
   const headline = "Team Uraan".split('');
   const images = [img1, img2, img3, img4];
 const scrollToProject = () => {
-    const element = document.getElementById('project-section'); // Make sure your target component has this ID
+    const element = document.getElementById('project-section');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
@@ -33,7 +33,7 @@ const scrollToProject = () => {
       id="home"
       className="w-full bg-[#FAF6EC] flex items-center justify-center relative overflow-hidden"
     >
-      {/* Particle Background */}
+       
       <Particles
         options={{
           fpsLimit: 60,
@@ -56,7 +56,7 @@ const scrollToProject = () => {
           backgroundRepeat: 'no-repeat',
         }}
       >
-        {/* Grid Overlay */}
+        
         <div
           className="absolute inset-0 mx-auto max-w-400  w-full h-full z-10 pointer-events-none opacity-40 md:opacity-100"
           style={{

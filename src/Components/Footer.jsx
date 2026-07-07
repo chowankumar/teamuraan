@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { FaInstagram, FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaLinkedinIn, FaTwitter, } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import logo from './logo2.png';
 
 const Footer = () => {
@@ -36,7 +37,7 @@ const Footer = () => {
     {
       name: "Twitter",
       handle: "@teamuraan",
-      icon: <FaTwitter />,
+      icon: <FaXTwitter />,
       url: "https://x.com/teamuraan",
       label: "Twitter",
     },
