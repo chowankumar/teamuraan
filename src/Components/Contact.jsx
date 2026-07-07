@@ -4,7 +4,8 @@ import { FiArrowUpRight, FiSend, FiCheckCircle, FiAlertCircle } from "react-icon
 import * as THREE from 'three';
 import emailjs from '@emailjs/browser';
 
-// --- SHADER COMPONENT (UNCHANGED) ---
+emailjs.init({ publicKey: 'Jz9bj5v9gJJlcavUj' });
+
 const Scene = () => {
   const mountRef = useRef(null);
   const mouse = useRef({ x: 0.5, y: 0.5 });
@@ -84,7 +85,6 @@ const Scene = () => {
   return <div ref={mountRef} className="absolute inset-0 z-0 pointer-events-none" />;
 };
 
-// --- MAIN SECTION ---
 const ContactSection = () => {
   const [focused, setFocused] = useState(null);
   const [isSending, setIsSending] = useState(false);
@@ -101,15 +101,19 @@ const ContactSection = () => {
   const sendEmail = (e) => {
     e.preventDefault();
     setIsSending(true);
-    emailjs.sendForm('service_iomgprj', 'template_baqgonn', formRef.current, 'Jz9bj5v9gJJlcavUj')
-    .then(() => {
+
+    emailjs.sendForm('service_iomgprj', 'template_baqgonn', formRef.current)
+      .then(() => {
         setStatus('success');
         formRef.current.reset();
-        setIsSending(false);
-    }, () => {
+      })
+      .catch((err) => {
+        console.error('EmailJS send failed:', err);
         setStatus('error');
+      })
+      .finally(() => {
         setIsSending(false);
-    });
+      });
   };
 
   const inputClasses = "w-full bg-transparent border-b border-white/20 py-5 md:py-4 focus:outline-none text-white transition-all placeholder:text-gray-600 autofill:shadow-[0_0_0_30px_#141414_inset] [-webkit-text-fill-color:white]";
@@ -118,7 +122,6 @@ const ContactSection = () => {
     <section className="bg-[#141414] text-[#FAF7F2] min-h-200 py-20 md:py-24 px-6 relative overflow-hidden  flex items-center" id="contact">
       <Scene />
 
-      {/* CUSTOM NOTIFICATION UI - Optimized for Mobile Thumb Reach */}
       <AnimatePresence>
         {status && (
           <motion.div 
@@ -139,7 +142,6 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 items-center">
           
-          {/* LEFT: CONTENT */}
           <motion.div 
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -154,7 +156,6 @@ const ContactSection = () => {
               Get in Touch
             </motion.span>
             
-            {/* Awwwards Header: Large, Bold, Overlapping */}
             <h2 className="text-[15vw] md:text-[100px] font-black leading-[0.8] mb-8 md:mb-12 tracking-tighter uppercase">
               Let's <br /> 
               <span  style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>Create</span> <br /> 
@@ -180,14 +181,12 @@ const ContactSection = () => {
             </div>
           </motion.div>
 
-          {/* RIGHT: FORM - Handcrafted for Mobile */}
           <motion.div 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="bg-white/[0.02] md:bg-white/[0.03] backdrop-blur-3xl p-8 md:p-12 rounded-[2.5rem] md:rounded-[3rem] border border-white/10 shadow-3xl relative overflow-hidden"
           >
-            {/* Ambient Background Glow for Form */}
             <div className="absolute top-0 right-0 w-32 h-32 bg-[#FE8535]/10 blur-[80px] -z-10" />
             
             <form ref={formRef} onSubmit={sendEmail} className="space-y-10 md:space-y-12">
@@ -213,6 +212,20 @@ const ContactSection = () => {
                 <motion.div 
                   initial={{ width: 0 }}
                   animate={{ width: focused === 'email' ? '100%' : '0%' }} 
+                  className="absolute bottom-0 left-0 h-[2px] bg-[#FE8535] shadow-[0_0_10px_#FE8535]" 
+                />
+              </div>
+
+              <div className="relative group">
+                <input 
+                  type="tel" name="phone" required placeholder="Phone Number"
+                  pattern="[0-9+\-\s()]{7,20}"
+                  onFocus={() => setFocused('phone')} onBlur={() => setFocused(null)}
+                  className={inputClasses}
+                />
+                <motion.div 
+                  initial={{ width: 0 }}
+                  animate={{ width: focused === 'phone' ? '100%' : '0%' }} 
                   className="absolute bottom-0 left-0 h-[2px] bg-[#FE8535] shadow-[0_0_10px_#FE8535]" 
                 />
               </div>
