@@ -37,7 +37,7 @@ const Footer = () => {
     {
       name: "Twitter",
       handle: "@teamuraan",
-      icon: <FaXTwitter />,
+      icon: <FaXTwitter/>,
       url: "https://x.com/teamuraan",
       label: "Twitter",
     },
