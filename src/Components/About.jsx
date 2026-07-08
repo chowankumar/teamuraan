@@ -1,5 +1,7 @@
-import React from 'react';
+ import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
+import { FiArrowUpRight } from 'react-icons/fi';
 import star from './Star 1.png';
 import img from './about img.jpg'
 import img1 from './about img2.jpg'
@@ -64,6 +66,21 @@ export default function About() {
               crafting captivating content that doesn’t just look good it delivers 
               measurable results.
             </motion.p>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7, duration: 0.6 }}
+              className="mt-6"
+            >
+              <Link
+                to="/about"
+                className="inline-flex items-center gap-2 bg-[#222222] text-white px-6 py-3 rounded-full font-bold uppercase text-xs tracking-widest hover:bg-[#FE8535] transition-all group"
+              >
+                Learn More About Us
+                <FiArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+              </Link>
+            </motion.div>
           </motion.div>
           
           {/* LANDSCAPE BOX with Image */}

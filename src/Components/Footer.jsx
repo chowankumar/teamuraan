@@ -169,7 +169,7 @@ const Footer = () => {
                 <p className="text-xs text-gray-500">© 2026 Team Uraan</p>
                 <div className="flex items-center gap-1">
                   <span className="text-[10px] text-gray-600 uppercase tracking-widest">A powered by</span>
-                  <span className="text-[10px] font-black uppercase text-[#FE8535] tracking-widest">HAYVIRAL</span>
+                  <span className="text-[10px] font-black uppercase text-[#FE8535] tracking-widest">Team Uraan</span>
                 </div>
               </div>
             </div>
