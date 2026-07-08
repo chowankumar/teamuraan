@@ -162,22 +162,32 @@ const ContactSection = () => {
               Together.
             </h2>
             
-            <div className="space-y-4 md:space-y-6">
+            <div className="space-y-6 md:space-y-8">
               <p className="text-gray-500 uppercase text-[10px] md:text-xs tracking-[0.3em] font-bold">Inquiries</p>
-             <button
-             
-                className="text-2xl md:text-3xl font-bold hover:text-[#FE8535] transition-all flex items-center gap-4 group"
-              >
-             +92 331 1380533
-                <FiArrowUpRight className="text-[#FE8535] group-active:translate-x-2 group-active:-translate-y-2 transition-transform" />
-             </button>
-             <button
-             
-                className="text-2xl md:text-3xl font-bold hover:text-[#FE8535] transition-all flex items-center gap-4 group"
-              >
-            +92 332 1763674
-                <FiArrowUpRight className="text-[#FE8535] group-active:translate-x-2 group-active:-translate-y-2 transition-transform" />
-             </button>
+
+              <div>
+                <p className="text-gray-500 uppercase text-[9px] md:text-[10px] tracking-[0.25em] font-bold mb-1">Syed Musab</p>
+                <button className="text-2xl md:text-3xl font-bold hover:text-[#FE8535] transition-all flex items-center gap-4 group">
+                  +92 331 1380533
+                  <FiArrowUpRight className="text-[#FE8535] group-active:translate-x-2 group-active:-translate-y-2 transition-transform" />
+                </button>
+              </div>
+
+              <div>
+                <p className="text-gray-500 uppercase text-[9px] md:text-[10px] tracking-[0.25em] font-bold mb-1">Muhammad Jibrael</p>
+                <button className="text-2xl md:text-3xl font-bold hover:text-[#FE8535] transition-all flex items-center gap-4 group">
+                  +92 332 1763674
+                  <FiArrowUpRight className="text-[#FE8535] group-active:translate-x-2 group-active:-translate-y-2 transition-transform" />
+                </button>
+              </div>
+
+              <div>
+                <p className="text-gray-500 uppercase text-[9px] md:text-[10px] tracking-[0.25em] font-bold mb-1">Muhammad Jibrael — UK</p>
+                <button className="text-2xl md:text-3xl font-bold hover:text-[#FE8535] transition-all flex items-center gap-4 group">
+                  +44 7745 335504
+                  <FiArrowUpRight className="text-[#FE8535] group-active:translate-x-2 group-active:-translate-y-2 transition-transform" />
+                </button>
+              </div>
             </div>
           </motion.div>
 
