@@ -1,10 +1,10 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react';
-import bg from './compressedImages/Backgroundhero.webp';
+import bg from './../assets/compressedImages/Backgroundhero.webp';
 import { motion } from 'framer-motion';
-import img1 from './img (1).jpeg';
-import img2 from './img (2).jpeg';
-import img3 from './img (3).jpeg';
-import img4 from './img (4).jpeg';
+import img1 from '../assets/compressedImages/./img (1).jpeg';
+import img2 from '../assets/compressedImages/img (2).jpeg';
+import img3 from '../assets/compressedImages/img (3).jpeg';
+import img4 from '../assets/compressedImages/img (4).jpeg';
 
 const Particles = lazy(() => import('react-tsparticles'));
 
@@ -140,7 +140,8 @@ const Hero = () => {
             <img
               key={idx}
               src={img}
-              loading="lazy"
+              loading="eager"
+              fetchPriority="high"
               decoding="async"
               width={240}
               height={240}
@@ -161,8 +162,7 @@ const Hero = () => {
               >
                 <img
                   src={img}
-                  loading="lazy"
-                  decoding="async"
+                   
                   alt="Portfolio work"
                   className="w-full h-full object-cover"
                 />

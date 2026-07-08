@@ -4,14 +4,17 @@ import 'aos/dist/aos.css'
 import Lenis from 'lenis'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Home from './Components/Home'
-import AboutPage from './Components/AboutPage'
-import ServicesPage from './Components/Servicespage';
+
+const Home  = React.lazy(() => import("./Pages/Home"))
+const AboutPage = React.lazy(() => import("./Pages/AboutPage"))
+const ServicesPage = React.lazy(() => import("./Pages/Servicespage"))
+// import Home from './Pages/Home'
+// import AboutPage from './Pages/AboutPage'
+// import ServicesPage from './Pages/Servicespage';
 
 const App = () => {
   useEffect(() => {
     const lenis = new Lenis()
-
     function raf(time) {
       lenis.raf(time)
       requestAnimationFrame(raf)
