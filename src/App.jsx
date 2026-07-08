@@ -6,7 +6,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import Home from './Components/Home'
 import AboutPage from './Components/AboutPage'
-import ServicesPage from './Components/ServicesPage';
+import ServicesPage from './Components/Servicespage';
 
 const App = () => {
   useEffect(() => {
