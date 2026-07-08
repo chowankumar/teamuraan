@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import logo from './../assets/compressedImages/Logo.png'
+import logo from './../assets/compressedImages/Logo.webp'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const Navbar = () => {

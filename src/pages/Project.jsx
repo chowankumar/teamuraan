@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import arrow from "../assets/compressedImages/Group 19.png";
+import arrow from "../assets/compressedImages/Group 19.webp";
 import yumyumcover1 from './../assets/Artboard-WebP/Artboard 1.webp'
 import shawarmacover2 from './../assets/Artboard-WebP/Artboard 4.webp'
 import stovevlubcover3 from './../assets/Artboard-WebP/Artboard 5.webp'

@@ -1,10 +1,10 @@
 import React, { lazy, Suspense, useEffect, useState } from 'react';
 import bg from './../assets/compressedImages/Backgroundhero.webp';
 import { motion } from 'framer-motion';
-import img1 from '../assets/compressedImages/./img (1).jpeg';
-import img2 from '../assets/compressedImages/img (2).jpeg';
-import img3 from '../assets/compressedImages/img (3).jpeg';
-import img4 from '../assets/compressedImages/img (4).jpeg';
+import img1 from '../assets/compressedImages/./img (1).webp';
+import img2 from '../assets/compressedImages/img (2).webp';
+import img3 from '../assets/compressedImages/img (3).webp';
+import img4 from '../assets/compressedImages/img (4).webp';
 
 const Particles = lazy(() => import('react-tsparticles'));
 

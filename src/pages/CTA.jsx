@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { FiCalendar } from "react-icons/fi";
 import { FaWhatsapp } from "react-icons/fa";
-import img from '../assets/compressedImages/CTAimg.jpg';
+import img from '../assets/compressedImages/CTAimg.webp';
 
 const CTASection = () => {
   const whatsappNumber = "1234567890";

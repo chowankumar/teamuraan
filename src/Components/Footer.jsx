@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import logo from '../assets/compressedImages/logo2.png';
+import logo from '../assets/compressedImages/logo2.webp';
 
  
 

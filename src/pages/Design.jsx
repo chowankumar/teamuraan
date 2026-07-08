@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import star from '../assets/compressedImages/Star2.png'
-import img from "../assets/compressedImages/p5.jpg"
+import star from '../assets/compressedImages/Star2.webp'
+import img from "../assets/compressedImages/p5.webp"
 import design1 from '../assets/compressedImages/design1.avif'
 import design2 from '../assets/compressedImages/design2.avif'
 import design3 from '../assets/compressedImages/design3.avif'

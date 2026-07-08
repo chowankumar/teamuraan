@@ -2,9 +2,9 @@
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
 import { FiArrowUpRight } from 'react-icons/fi';
-import star from '../assets/compressedImages/Star1.png';
+import star from '../assets/compressedImages/Star1.webp';
 import img from '../assets/compressedImages/about img.webp'
-import img1 from './../assets/compressedImages/about img2.jpg'
+import img1 from './../assets/compressedImages/about img2.webp'
 
 
 export default function About() {
