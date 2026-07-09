@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
-import jibraelPhoto from '../assets/compressedImages/1.jpg';
-import musabPhoto from '../assets/compressedImages/2.jpg';
+import jibraelPhoto from '../assets/compressedImages/1.webp';
+import musabPhoto from '../assets/compressedImages/2.webp';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },

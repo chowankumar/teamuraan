@@ -1,16 +1,13 @@
- import React, { useEffect } from 'react'
+import React, { useEffect, Suspense } from 'react'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import Lenis from 'lenis'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 
-const Home  = React.lazy(() => import("./Pages/Home"))
+const Home = React.lazy(() => import("./Pages/Home"))
 const AboutPage = React.lazy(() => import("./Pages/AboutPage"))
 const ServicesPage = React.lazy(() => import("./Pages/Servicespage"))
-// import Home from './Pages/Home'
-// import AboutPage from './Pages/AboutPage'
-// import ServicesPage from './Pages/Servicespage';
 
 const App = () => {
   useEffect(() => {
@@ -32,11 +29,13 @@ const App = () => {
 
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/services" element={<ServicesPage />} />
-      </Routes>
+      <Suspense fallback={<div className="min-h-screen bg-[#141414]" />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+        </Routes>
+      </Suspense>
     </BrowserRouter>
   )
 }
