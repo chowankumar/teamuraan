@@ -43,7 +43,7 @@ const CTASection = () => {
         </p>
 
         <div className="flex justify-center items-center gap-4">
-          <a href={`https://wa.me/${+923311380533}`} target="_blank" rel="noopener noreferrer" className="bg-[#222222] text-white px-10 cursor-pointer py-3 rounded-full hover:bg-[#FE8535] transition-all duration-300 flex items-center gap-2 font-semibold">
+          <a href={`https://wa.me/${+923001380534}`} target="_blank" rel="noopener noreferrer" className="bg-[#222222] text-white px-10 cursor-pointer py-3 rounded-full hover:bg-[#FE8535] transition-all duration-300 flex items-center gap-2 font-semibold">
             <FaWhatsapp className="text-xl" /> Hire Us Now
           </a>
        

@@ -72,9 +72,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0D0D0D] text-white pt-20 pb-6 px-6 relative overflow-hidden">
       
-      {/* ============================================================
-          DESKTOP VERSION
-          ============================================================ */}
+      
       <div className="hidden md:block max-w-7xl mx-auto">
         <div className="flex flex-col items-center mb-14">
           <div className="flex items-center gap-4 mb-4">
@@ -111,7 +109,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between border-t border-white/5 pt-8 gap-6">
           <div className="flex items-center gap-2 group cursor-default">
             <span className="text-gray-500 text-sm">Powered by</span>
-            <span className="text-white font-bold tracking-wider group-hover:text-[#FE8535] transition-colors duration-300">HayViral</span>
+            <span className="text-white font-bold tracking-wider group-hover:text-[#FE8535] transition-colors duration-300"> Team Uraan</span>
             <div className="w-1.5 h-1.5 rounded-full bg-[#FE8535] animate-pulse" />
           </div>
           <p className="text-sm text-gray-500 font-medium">© 2026 Team Uraan. All rights reserved.</p>
