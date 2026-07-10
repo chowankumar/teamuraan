@@ -5,9 +5,9 @@ import Lenis from 'lenis'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 
-const Home = React.lazy(() => import("./Pages/Home"))
-const AboutPage = React.lazy(() => import("./Pages/AboutPage"))
-const ServicesPage = React.lazy(() => import("./Pages/Servicespage"))
+const Home = React.lazy(() => import("./pages/Home"))
+const AboutPage = React.lazy(() => import("./pages/AboutPage"))
+const ServicesPage = React.lazy(() => import("./pages/Servicespage"))
 
 const App = () => {
   useEffect(() => {
