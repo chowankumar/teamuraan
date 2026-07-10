@@ -41,7 +41,13 @@ const ContactSection = () => {
   const inputClasses = "w-full bg-transparent border-b border-white/20 py-5 md:py-4 focus:outline-none text-white transition-all placeholder:text-gray-600 autofill:shadow-[0_0_0_30px_#141414_inset] [-webkit-text-fill-color:white]";
 
   return (
-    <section className="bg-[#141414] text-[#FAF7F2] min-h-200 py-20 md:py-24 px-6 relative overflow-hidden  flex items-center" id="contact">
+    <section className="bg-[#141414] text-[#FAF7F2] min-h-200 py-20 md:py-24 px-6 relative overflow-hidden flex items-center" id="contact">
+      <style>{`
+        .stroke-text {
+          -webkit-text-fill-color: transparent;
+        }
+      `}</style>
+
       <Suspense fallback={null}>
         <Scene />
       </Suspense>
@@ -82,7 +88,7 @@ const ContactSection = () => {
             
             <h2 className="text-[15vw] md:text-[100px] font-black leading-[0.8] mb-8 md:mb-12 tracking-tighter uppercase">
               Let's <br /> 
-              <span  style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>Create</span> <br /> 
+              <span style={{ WebkitTextStroke: '1px rgba(255,255,255,0.3)' }}>Create</span> <br /> 
               Together.
             </h2>
             
@@ -124,6 +130,9 @@ const ContactSection = () => {
             <div className="absolute top-0 right-0 w-32 h-32 bg-[#FE8535]/10 blur-[80px] -z-10" />
             
             <form ref={formRef} onSubmit={sendEmail} className="space-y-10 md:space-y-12">
+              {/* Fixed recipient — must match the "To Email" configured in your EmailJS template */}
+              <input type="hidden" name="to_email" value="connect.teamuraan@gmail.com" />
+
               <div className="relative group">
                 <input 
                   type="text" name="name" required placeholder="Full Name"
@@ -153,7 +162,7 @@ const ContactSection = () => {
               <div className="relative group">
                 <input 
                   type="tel" name="phone" required placeholder="Phone Number"
-                  pattern="[0-9+\-\s()]{7,20}"
+                  pattern="[0-9+\s()-]{7,20}"
                   onFocus={() => setFocused('phone')} onBlur={() => setFocused(null)}
                   className={inputClasses}
                 />
@@ -189,12 +198,6 @@ const ContactSection = () => {
           </motion.div>
         </div>
       </div>
-
-      <style jsx>{`
-        .stroke-text {
-          -webkit-text-fill-color: transparent;
-        }
-      `}</style>
     </section>
   );
 };
