@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import img from '../assets/compressedImages/CTAimg.webp';
 
 const CTASection = () => {
-  const whatsappNumber = "1234567890";
+  const whatsappNumber = "923001380534";
   const calendlyLink = "https://calendly.com/your-profile";
 
   return (
