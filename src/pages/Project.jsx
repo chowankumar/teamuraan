@@ -67,7 +67,7 @@ const ProjectsSection = () => {
 
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 md:mb-12 md:px-20">
           <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }}>
-            <span className="text-[#FE8535] font-bold tracking-[0.3em] text-[10px] uppercase block mb-2">Our Portfolio</span>
+            <span className="text-[#FE8535] font-bold tracking-[0.3em] text-[22px] uppercase block mb-2">Our Portfolio</span>
             <h2 className="text-5xl md:text-6xl font-black text-[#111] leading-[0.9] tracking-tighter">
               FEATURED <br /> <span className="italic font-light">PROJECTS</span>
             </h2>
