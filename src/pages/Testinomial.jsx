@@ -7,7 +7,8 @@ const Testimonials = () => {
   const testimonials = [
     { name: "Shahrukh Akber", role: "CEO, The Stove Club", text: "Working with Team Uraan was an incredible experience. Their strategy and execution helped our brand scale faster than we expected." },
     { name: "Ali Ahmed", role: "Founder, Naanstop", text: "The creative vision they brought to our digital marketing was game-changing. We saw a 40% increase in engagement within two months." },
-    { name: "Masood Molai", role: "CEO, Misty Cafe", text: "Highly professional team. They captured the essence of our cafe through photography and video perfectly. Our customers love the new look." }
+    { name: "Masood Molai", role: "CEO, Misty Cafe", text: "Highly professional team. They captured the essence of our cafe through photography and video perfectly. Our customers love the new look." },
+    { name: "Noman Ali", role: "CEO, Sorriso", text: "The team's expertise in digital marketing exceeded our expectations. Our website traffic grew by 50%, and conversions steadily improved after the campaign launch." }
   ];
 
   const handleNext = () => setCurrentIndex((prev) => (prev + 1) % testimonials.length);
