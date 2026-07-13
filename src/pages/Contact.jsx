@@ -134,7 +134,6 @@ const ContactSection = () => {
               <input type="hidden" name="to_email" 
               value="hello@teamuraanagency.com" />
 
-
               <div className="relative group">
                 <input 
                   type="text" name="name" required placeholder="Full Name"
