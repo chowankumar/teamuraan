@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { FiArrowLeft } from 'react-icons/fi';
-import jibraelPhoto from '../assets/compressedImages/1.webp';
-import musabPhoto from '../assets/compressedImages/2.webp';
+import founder from '../assets/founder.png';
+import ceo from '../assets/CEO.jpeg';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -13,14 +13,14 @@ const fadeUp = {
 const owners = [
   {
     name: 'Muhammad Jibrael',
-    role: 'Co-Founder',
-    photo: jibraelPhoto,
+    role: 'Founder',
+    photo: founder,
     bio: 'Muhammad Jibrael leads Team Uraan\'s strategy and client partnerships, bringing a sharp eye for brand storytelling and a drive to turn ambitious ideas into measurable growth.'
   },
   {
     name: 'Syed Musab',
-    role: 'Co-Founder',
-    photo: musabPhoto,
+    role: 'CEO',
+    photo: ceo,
     bio: 'Syed Musab drives the creative and operational engine behind Team Uraan, overseeing content, campaigns, and the systems that keep every project running smoothly.'
   }
 ];

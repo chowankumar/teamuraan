@@ -2,10 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence, useSpring, useMotionValue } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
-import img1 from './../assets/compressedImages/p2.webp'
-import img2 from './../assets/compressedImages/p1.webp'
-import img3 from './../assets/compressedImages/p4.webp'
-import img4 from './../assets/compressedImages/p3.webp'
+import img1 from './../assets/compressedImages/p2.jpg'
+import img2 from './../assets/compressedImages/p1.jpg'
+import img3 from './../assets/compressedImages/p4.jpg'
+import img4 from './../assets/compressedImages/p3.jpg'
 
 const services = [
   {

@@ -2,17 +2,18 @@ import { useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FiArrowLeft, FiArrowUpRight } from "react-icons/fi";
-import img1 from '../assets/compressedImages/p2.webp'
-import img2 from '../assets/compressedImages/p1.webp'
-import img3 from '../assets/compressedImages/p4.webp'
-import img4 from '../assets/compressedImages/p3.webp'
+import img1 from '../assets/compressedImages/p1.jpg'
+import img2 from '../assets/compressedImages/p2.jpg'
+import img3 from '../assets/compressedImages/p3.jpg'
+//import img4 from '../assets/compressedImages/p3.webp'
+import img4 from '../assets/compressedImages/p4.jpg'
 
 const services = [
   {
     id: 1,
     slug: "content-creation",
     title: "Content Creation",
-    image: img1,
+    image: img2,
     summary: "Turning your social media platforms into engagement engines that attract, convert, and retain customers.",
     details: [
       "From eye-catching visuals to compelling captions, we build a content system for your brand — not just one-off posts. Every piece is designed to stop the scroll and move people to act.",
@@ -24,19 +25,20 @@ const services = [
     id: 2,
     slug: "digital-marketing",
     title: "Digital Marketing",
-    image: img2,
+    image: img1,
     summary: "Performance-driven campaigns using SEO, paid ads, and analytics to increase visibility and measurable ROI.",
     details: [
       "We design and run digital marketing campaigns with one goal: measurable return. That means clear KPIs before a single dollar is spent, not vague 'brand awareness' promises.",
       "Our approach combines SEO to build long-term organic visibility, paid ads (Meta, Google, TikTok) for immediate reach, and ongoing analytics so every campaign gets sharper over time.",
       "You get transparent reporting on traffic, conversions, and cost-per-result — no guesswork, just numbers you can act on."
-    ]
+    ],
+    
   },
   {
     id: 3,
     slug: "video-photography",
     title: "Video & Photography",
-    image: img3,
+    image: img4,
     summary: "High-quality videos and photography that capture attention, tell stories, and elevate your brand.",
     details: [
       "Visuals are often the first impression a customer has of your brand — we make sure it's a strong one. Our team handles everything from concept to final edit.",
@@ -48,7 +50,7 @@ const services = [
     id: 4,
     slug: "restaurant-pos",
     title: "Restaurant POS",
-    image: img4,
+    image: img3,
     summary: "Smart POS solutions that streamline restaurant operations and enhance customer experience.",
     details: [
       "We help restaurants set up point-of-sale systems that actually match how their floor and kitchen operate — not a generic one-size-fits-all install.",
