@@ -5,7 +5,7 @@ import emailjs from '@emailjs/browser';
 
 const Scene = lazy(() => import('./Scene'));
 
-emailjs.init({ publicKey: 'Jz9bj5v9gJJlcavUj' });
+emailjs.init({ publicKey: 'Hp-IPbCBAOEv53OCK' });
 
 const ContactSection = () => {
   const [focused, setFocused] = useState(null);
@@ -24,7 +24,7 @@ const ContactSection = () => {
     e.preventDefault();
     setIsSending(true);
 
-    emailjs.sendForm('service_iomgprj', 'template_baqgonn', formRef.current)
+    emailjs.sendForm('service_znk136e', 'template_hicl5y8', formRef.current)
       .then(() => {
         setStatus('success');
         formRef.current.reset();
@@ -131,7 +131,8 @@ const ContactSection = () => {
             
             <form ref={formRef} onSubmit={sendEmail} className="space-y-10 md:space-y-12">
               {/* Fixed recipient — must match the "To Email" configured in your EmailJS template */}
-              <input type="hidden" name="to_email" value="connect. hello@teamuraanagency.com" />
+              <input type="hidden" name="to_email" 
+              value="connect.hello@teamuraanagency.com" />
 
               <div className="relative group">
                 <input 
