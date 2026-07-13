@@ -132,7 +132,7 @@ const ContactSection = () => {
             <form ref={formRef} onSubmit={sendEmail} className="space-y-10 md:space-y-12">
               {/* Fixed recipient — must match the "To Email" configured in your EmailJS template */}
               <input type="hidden" name="to_email" 
-              value="connect.hello@teamuraanagency.com" />
+              value="hello@teamuraanagency.com" />
 
 
               <div className="relative group">
