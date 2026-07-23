@@ -27,6 +27,15 @@ import cholaah2 from './../assets/Mockups-WebP/Choolaah1.webp'
 import chai1 from './../assets/Mockups-WebP/CHAI DEEWARI.webp'
 import chai2 from './../assets/Mockups-WebP/CHAI DEEWARI1.webp'
 
+import sorriso1 from './../assets/sorriso/sorriso1.jpeg'
+import sorriso2 from './../assets/sorriso/sorriso2.jpeg'
+import sorriso3 from './../assets/sorriso/sorriso3.jpeg'
+import sorriso4 from './../assets/sorriso/sorriso4.jpeg'
+
+import Medbilsol1 from './../assets/sorriso/Medbilsol1.jpeg'
+import Medbilsol2 from './../assets/sorriso/Medbilsol2.jpeg'
+import Medbilsol3 from './../assets/sorriso/Medbilsol3.jpeg'
+
 const dummyProjects = [
   { id: 1, title: "Yum Yum", category: "Food Branding", img: yumyumcover1, gallery: [yumimg1, yumimg2] },
   { id: 2, title: "Shawarma Kaizer", category: "Restaurant Identity", img: shawarmacover2, gallery: [Shawarmaimg1, Shawarmaimg2] },
@@ -36,6 +45,8 @@ const dummyProjects = [
   { id: 6, title: "Chai Deewari", category: "Content Creation", img: chaideewarcover6, gallery: [chai1, chai2] },
   { id: 7, title: "Choolaah", category: "Restaurant Branding", img: chollahcover7, gallery: [cholaah1, cholaah2] },
   { id: 8, title: "Jazzy Foods", category: "Photography", img: jazzycover8, gallery: [jazzyfood1, jazzyfood2] },
+  { id: 9, title: "Sorriso", category: "Photography", img:sorriso1, gallery: [sorriso2,sorriso3,sorriso4] },
+  { id: 10, title: "Medbilsol", category: "Photography", img: Medbilsol3, gallery: [Medbilsol1,Medbilsol2 ] },
 ];
 
 const ProjectsSection = () => {
